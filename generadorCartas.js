@@ -1,8 +1,11 @@
 /// Generador de cartas 
 
-var listaCartas = ["The Wave", "The Big", "The Fight", "The Fly", "The Mirror", "The Cloud", "The Through",
-                    "The Arrow", "The Float", "The Sword", "The Sweet", "The Dark", "The Time", "The Twins",
-                    "The Watery"];
+var listaCartas = ["The Wave", "The Big", "The Fight", "The Fly", "The Mirror", "The Cloud", "The Through", "The Arrow", "The Float", "The Sword",
+                     "The Sweet", "The Dark", "The Time", "The Twins", "The Watery", "The Dream", "The Rain", "The Dash", "The Erase", "The Lock",
+                     "The Wood", "The Return", "The Power", "The Light", "The Firey", "The Shadow", "The Storm", "The Sand", "The Thunder",
+                     "The Create", "The Wind", "The Freeze", "The Mist", "The Shot", "The Flower", "The Shield", "The Loop", "The Maze",
+                     "The Silent", "The Earthy", "The Jump", "The Glow", "The Voice", "The Change", "The Song", "The Sleep", "The Move",
+                     "The Illusion", "The Little", "The Bubbles", "The Snow", "The Libra"];
 var valoresObtenidos = [];
 var listaIds = ["presente1", "presente2", "presente3",
                     "pasado1", "pasado2", "pasado3",
