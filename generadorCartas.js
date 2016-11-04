@@ -26,6 +26,7 @@ function lanzarDestino() {
 function obtenerCarta() {
     
     var numCarta = 0;
+    var resultado = "";
     var valido = false;   
         
         while(!valido)
@@ -40,7 +41,13 @@ function obtenerCarta() {
             }
         }
 
-    return listaCartas[numCarta];
+    numCarta = Math.floor((Math.random() * 10));
+    resultado = listaCartas[numCarta];
+
+    if (numCarta % 2 != 0)
+        resultado += ", invertida"
+
+    return resultado;
 }
 
 // Limpiando lista de valores obtenidos
