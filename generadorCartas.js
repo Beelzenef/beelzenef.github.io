@@ -40,12 +40,21 @@ function obtenerCarta() {
                 valido = true;
             }
         }
-
-    numCarta = Math.floor((Math.random() * 10));
     resultado = listaCartas[numCarta];
 
-    if (numCarta % 2 != 0)
+    if (cartaInvertida())
         resultado += ", invertida"
+
+    return resultado;
+}
+
+function cartaInvertida()
+{
+    var resultado = false;
+    var num = 0;
+
+    num = Math.floor((Math.random() * 10));
+    resultado = (num % 2 != 0) ? true : false;
 
     return resultado;
 }
