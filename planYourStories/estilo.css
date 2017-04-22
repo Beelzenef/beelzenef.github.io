@@ -1,0 +1,28 @@
+
+
+body {
+    background-image: url("http://edublog.amdsb.ca/kaufman/files/2016/05/bestpractices-2bzhx5s.jpg");
+    background-repeat: "no-repeat";
+}
+
+h1 {
+    color: midnightblue;
+}
+
+#info_Personajes, #info_Lugares, #info_Capitulos {
+    background-color: white;
+    width: 20%;
+    border: 3px solid black;
+    margin: 10px; 
+    float: left;
+
+    opacity: 0.5;
+}
+
+h2 {
+    opacity: 1.0;
+}
+
+#info_Personajes:hover, #info_Lugares:hover, #info_Capitulos:hover {
+    opacity: 1.0;
+}
