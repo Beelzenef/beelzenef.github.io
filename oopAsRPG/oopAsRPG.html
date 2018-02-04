@@ -1,69 +1,272 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>OOP como un RPG</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="stylesheet" href="../libs/reveal/css/reveal.css">
-        <link rel="stylesheet" href="../libs/reveal/css/theme/blood.css">
+    <title>OOP como un RPG</title>
 
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="../libs/reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../libs/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../libs/reveal/css/theme/blood.css">
 
-        <!-- Printing and PDF exports -->
-        <script>
-            var link = document.createElement( 'link' );
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-            document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../libs/reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>OOP como un RPG</h2>
+                <p> ¡Aprender jugando! </p>
+            </section>
+            <section>
+
+                <h4> ¿Quién soy? </h4>
+                <p>Elena Guzmán Blanco, entre otras cosas:</p>
+                <ul>
+                    <li>Android y C# developer</li>
+                    <li>Escritora y worldbuilder</li>
+                    <li>Directora de juegos de rol</li>
+                    <li>Bloguera</li>
+                    <li>Fan de TODO pero sin tiempo para nada</li>
+                </ul>
+            </section>
+
+            <section>
+
                 <section>
-                    <h2>OOP como un RPG</h2>
-                    <p> ¡Aprender jugando! </p>
-                </section>
-                <section>
-
-                    <h4> ¿Quién soy? </h4>
-                    <p>Elena Guzmán Blanco, entre otras cosas:</p>
-                    <ul>
-                        <li>Android y C# developer</li>
-                        <li>Escritora y worldbuilder</li>
-                        <li>Directora de juegos de rol</li>
-                        <li>Bloguera</li>
-                        <li>Fan de TODO pero sin tiempo para nada</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>¿Qué es programar?</h3>
+                    <h5>¿Qué es programar?</h5>
                     <p>Algunos lo definen como magia, porque es una gran forma de crear.</p>
-                    <p>En realidad, es dominar un lenguaje intermedio con el que comunicarnos con la máquina, para recibir y escribir datos.</p>
+                    <p>En realidad, es dominar un lenguaje intermedio con el que comunicarnos con la máquina, para recibir y
+                        escribir datos.</p>
                     <p>Con estas instrucciones, resolver situaciones, optimizar algoritmos, facilitar operaciones.</p>
                 </section>
 
                 <section>
-                    <h4> Búscame en la red </h4>
+                    <h5>¿Qué lenguaje elegir?</h5>
+                    <p>Hay muchos lenguajes, y cada vez aparecen más.</p>
+                    <p> ¿Cuál elegir entonces? La respuesta es más sencilla de lo que pudiera parecer.</p>
+                    <p> Todo depende.</p>
+                    <p> Y no olvidemos las modas.</p>
 
+                </section>
+
+                <section>
+
+                    <h5>Entonces... ¿por qué C#?</h5>
                     <ul>
-                        <li><a href="https://twitter.com/Beelzenef_" target="_blank">Mis desvaríos en Twitter</a></li>
-                        <li><a href="https://github.com/Beelzenef" target="_blank">GitHub, para picar código</a></li>
+                        <li>Un lenguaje en expansión</li>
+                        <li>Lenguaje de
+                            <i>scripting</i>
+                        </li>
+                        <li>Multiplataforma</li>
+                        <li>Mucho soporte y documentación</li>
+                        <li>Gran comunidad</li>
+                        <li>.NET pertenece a Microsoft</li>
+                        <li>TIOBE lo sitúa en altas posiciones</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h5>Un paradigma "nuevo"</h5>
+                    <p>La Programación Orientada a Objetos (POO, OOP) es un paradigma de la programación que enfoca el código
+                        en Clases por múltiples motivos.</p>
+                    <p>Sus caracterísiticas son:</p>
+                    <ul>
+                        <li>Herencia</li>
+                        <li>Polimorfismo</li>
+                        <li>Encapsulamiento</li>
+                        <li>Ocultación</li>
+                        <li>Abstracción</li>
                     </ul>
                 </section>
-            </div>
+
+            </section>
+
+            <section>
+                <h4>Características de OOP</h4>
+                <section>
+                    <ul>
+                        <li>
+                            <b>Abstracción</b>: emulación de un elemento de la realidad para su uso de la programación. Tomar
+                            la información útil para su aplicación en el desarrollo.</li>
+                        <li>
+                            <b>Encapsulamiento</b>: retención o unión de todos los elementos de una Clase. La Clase, sus instancias,
+                            son atómicas, indivisibles.</li>
+                        <li>
+                            <b>Ocultación</b>: como método de seguridad, no toda la Clase es accesible, puedes ocultar miembros
+                            y funcionalidades para proteger el código y la ejecución de la aplicación.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>
+                        <b>Herencia</b>: las Clases pueden basarse en otras y adquirir las funcionalidades de la Clase de la
+                        cual hereda.</p>
+                    <p>Se puede crear incluso una jerarquía de herencia, creando un “arbol genealógico” entre Clases, para saber
+                        cómo evolucionan y crecen.</p>
+                    <pre>class Criatura { }<br/>Personaje : Criatura { }<br/>class Druida : Personaje { }<br/>Druida miNuevoDruida = new Druida();</pre>
+                </section>
+
+                <section>
+                    <p>
+                        <b>Polimorfismo</b>: las Clases permiten diferentes formas, diferentes invocaciones, haciendo más laxo
+                        el tipado fuerte.</p>
+                    <p>Quizás uno de los conceptos más complejos, fuertemente relacionado con la herencia de Clases y al tipado
+                        de datos.</p>
+                    <p>Su importancia depende del lenguaje que estemos usando, pues no todos tienen el mismo tipado.</p>
+                    <pre><code>Personaje otroPersonaje = new Druida();</code></pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h3>Clases, plantillas, fichas</h3>
+                    <p>Una Clase es una ficha, una plantilla, un modelo que tendrá información para casos concretos basados
+                        en la información definida en la Clase.</p>
+                    <p>Cuenta con Propiedades (datos), Métodos (acciones), Eventos (reacciones cuando algo sucede)...</p>
+                </section>
+
+                <section>
+                    <img src="https://i1.wp.com/inventwithpython.com/blogstatic/oop_stats1.jpg" />
+                </section>
+
+                <section>
+                    <h4>Un ejemplo:</h4>
+                    <table style="float:left;" border="1" class="fragment fade-up">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Personaje</p>
+                                    <p>Nombre: Abraxas</p>
+                                    <ul>
+                                        <li>Fuerza 13</li>
+                                        <li>Velocidad 10</li>
+                                    </ul>
+                                    <p>Habilidades</p>
+                                    <ul>
+                                        <li>Ataque con espada</li>
+                                        <li>Invocación animal</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="float:right;" border="1" class="fragment fade-up">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <code>
+                                            <p>class Personaje {</p>
+                                                <p>  nombre = Abraxas</p>
+                                                <p>  fuerza = 13</p>
+                                                <p>  velocidad = 10</p>
+                                                <p>  atacarConEspada();</p>
+                                                <p>  invocarAnimal(3);</p>
+                                                <p>}</p>
+                                    </code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </section>
+
+            <section>
+                <h3>Instancias</h3>
+                <p>Una instancia es un caso concreto basado una Clase.</p>
+                <p>Si contamos con la Clase Personaje, necesitaremos crear nuestros propios personajes para poder jugar con
+                    ellos… a través del Constructor:</p>
+                <pre><code>Mago personajePrincipal = new Mago();</code></pre>
+                <p>… y así podré acceder a sus miembros, Propiedades y Métodos: </p>
+                <pre><code>personajePrincipal.Nombre = "Balem";<br/>personajePrincipal.atacar();</code></pre>
+            </section>
+
+            <section>
+                <h3>Miembros estáticos</h3>
+                <p>No todas las Clases son iguales, y algunas cuentan con miembros estáticos.</p>
+                <p>Los miembros estáticos no necesitan de instancias para ser invocados. Son miembros de uso “general”, no concretos
+                    de cada caso concreto de objeto.</p>
+                <pre></pre>
+                <code>Mago.Descripcion();</code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Interfaces</h3>
+                <p>C# es un lenguaje de herencia única, y con implementación de interfaces múltiple. Solo puede heredar una
+                    vez, pero puede contener múltiples interfaces.</p>
+                <p>Los Interfaces son un contrato, un aumento obligado de funcionalidad para la Clase. En este caso, aumenta
+                    las capacidades de nuestro Druida:</p>
+                <pre><code>class Druida : Personaje, IArmoniaConNaturaleza, ICambioDeForma { }</code></pre>
+            </section>
+
+            <section>
+                <h3>Conclusiones</h3>
+                <p>La Programación Orientada a Objetos está diseñada para facilitar nuestra labor como desarrolladores, y con
+                    todo sigue evolucionando.</p>
+                <p>La clave está en experimentar, aprender, curiosear, ampliar fronteras.</p>
+                <p>Gracias a
+                    <a href="inventwithpython.com">Al Sweigart</a> por inspirar esta charla.</p>
+            </section>
+
+            <section>
+                <h4> Búscame en la red </h4>
+                <table style="float:left;" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="https://pbs.twimg.com/profile_images/891591744512544769/BunMhyMb_400x400.jpg" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="float:right;" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="https://twitter.com/Beelzenef_" target="_blank">@Beelzenef_ en Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Beelzenef" target="_blank">Beelzenef en GitHub</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:elena.guzbla@gmail.com">elena.guzbla@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+
         </div>
+    </div>
 
-        <script src="../libs/reveal/lib/js/head.min.js"></script>
-        <script src="../libs/reveal/js/reveal.js"></script>
+    <script src="../libs/reveal/lib/js/head.min.js"></script>
+    <script src="../libs/reveal/js/reveal.js"></script>
 
-        <script>
-            Reveal.initialize();
-        </script>
-    </body>
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+
 </html>
