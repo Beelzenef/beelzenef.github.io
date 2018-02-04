@@ -1,31 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <script src="generadorCartas.js"></script>
-    <title>Generador de destinos</title>
-</head>
-<body>
+<html lang="es">
 
-<a href="../index.html"><p>Volver</p></a>
+<head>
+    <title>beelzenef.github.io</title>
+    <meta http-equiv="X-UA-Compatible\" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        table {
+            table-layout: fixed;
+        }
+
+        table th,
+        table td {
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
     
-    <h1>Generador de destinos</h1>
-    <h3>Pasado</h3>
-        <p id="pasado1">Carta de pasado 1</p>
-        <p id="pasado2">Carta de pasado 2</p>
-        <p id="pasado3">Carta de pasado 3</p>
-    <h3>Presente</h3>
-        <p id="presente1">Carta de presente 1</p>
-        <p id="presente2">Carta de presente 2</p>
-        <p id="presente3">Carta de presente 3</p>
-    <h3>Futuro</h3>
-        <p id="futuro1">Carta de futuro 1</p>
-        <p id="futuro2">Carta de futuro 2</p>
-        <p id="futuro3">Carta de futuro 3</p>
-    <h3>Amigos y enemigos</h3>
-        <p id="amigo">Carta de amigo</p>
-        <p id="enemigo">Carta de enemigo</p>
-        
-        <button type="button" onclick="lanzarDestino()">¡Nuevo destino!</button>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="text-center" href="../index.html"><p class="navbar-brand">beelzenef.github.io</p></a>
+    </nav>
+
+</br></br>
+
+    <div class="container">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="generadorCartas.js"></script>
+
+        <h3 class="text-center">Destiny Captor!</h3>
+
+        <h5 class="text-center">Genera personajes, con pasado, presente y futuro, usando las cartas de Sakura Card Captor</h5>
+
+        <div class="table-responsive">
+            <table class="table text-centered">
+                <thead>
+                    <tr>
+                        <th scope="col">Pasado</th>
+                        <th scope="col">Presente</th>
+                        <th scope="col">Futuro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="pasado1">Pasado 1</td>
+                        <td id="presente1">Presente 1</td>
+                        <td id="futuro1">Futuro 1</td>
+                    </tr>
+                    <tr>
+                        <td id="pasado2">Pasado 2</td>
+                        <td id="presente2">Presente 2</td>
+                        <td id="futuro2">Futuro 2</td>
+                    </tr>
+                    <tr>
+                        <td id="pasado3">Pasado 3</td>
+                        <td id="presente3">Presente 3</td>
+                        <td id="futuro3">Futuro 3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Amigo</th>
+                        <th scope="col">Enemigo</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="amigo">Amigo</td>
+                        <td id="enemigo">Enemigo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <button class="btn btn-primary center-block" type="button" onclick="lanzarDestino()">¡Nuevo destino!</button>
+        <br/><br/>
+
+        <p class="text-center">Si quieres saber más sobre el proyecto, visita
+            <a href="https://3d10mundos.wordpress.com/2016/11/04/destinycaptor/">este post</a> en 3d10Mundos.</p>
+
+        <br/><br/><br/>
+        <footer class="page-footer blue center-on-small-only">
+            <div class="footer-copyright">
+                <div class="container-fluid text-center">Coded with ☕ by
+                    <a href="https://about.me/Beelzenef"> Elena Guzmán Blanco </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
 
 </html>
