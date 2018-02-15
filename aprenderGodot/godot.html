@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Aprendiendo Godot</title>
+
+    <link rel="stylesheet" href="../libs/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../libs/reveal/css/theme/beige.css">
+
+    <link rel="stylesheet" href="../libs/reveal/lib/css/zenburn.css">
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Aprendiendo Godot</h2>
+                <p>Una engine basada en nodos</p>
+            </section>
+            <section>
+
+                <h2> ¿Quién soy? </h2>
+
+                <p>Elena Guzmán Blanco, entre otras cosas:</p>
+                <ul>
+                    <li>Android y C# developer</li>
+                    <li>Escritora y worldbuilder</li>
+                    <li>Directora de juegos de rol</li>
+                    <li>Bloguera</li>
+                    <li>Fan de TODO pero sin tiempo para nada</li>
+                </ul>
+            </section>
+
+            <section>
+
+                <h2> ¿Qué es un videojuego? </h2>
+
+                <section>
+                    <h3>Historias, ocio, creatividad</h3>
+                    <p>Una nueva frontera hacia la creación, expresión. Historias dinámicas con interacción directa con jugador@s.</p>
+                    <p>La ¿última? conquista de la democratización de las herramientas.</p>
+                </section>
+                <section>
+                    <h3>Tareas en el <i>gamedev</i></h3>
+                    <ul>
+                        <li>Gráficos</li>
+                        <li>Música y sonido</li>
+                        <li>Diseño de niveles y jugabilidad</li>
+                        <li>Lógica y programación</li>
+                        <li>Traducción</li>
+                        <li>Guión e historias</li>
+                        <li>Marketing y ventas</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Nuestra misión como <i>programmers</i></h3>
+                    <p>Implementar mecánicas, crear obstáculos, crear inteligencia artificial, simular físicas... a través de código u otras herramientas.</p>
+                </section>
+            </section>
+
+            <section>
+
+                <h2> ¿Por qué Godot? </h2>
+
+                <ul>
+                    <li>
+                        <i>Open-source</i>
+                    </li>
+                    <li>Gratuita</li>
+                    <li>Multiplataforma</li>
+                    <li>Con motor 2D y 3D</li>
+                    <li>Una comunidad creciente</li>
+                    <li>Lenguaje propio basado en Python, GDscript</li>
+                    <li>Curva de aprendizaje adecuada</li>
+                    <li>Resultados en poco tiempo</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2>Nodos</h2>
+
+                <section>
+                    <p>¿Qué es un nodo?</p>
+                    <img src="http://www.lightenna.com/sitefiles/lightenna.com/tree_diagram_big.gif" />
+                </section>
+                <section>
+                    <p>Un nodo es la unidad básica con la que se opera en Godot. Una escena, un objeto con colisiones, el mundo
+                        para los niveles de nuestro juego, un sprite...</p>
+                </section>
+
+                <section>
+                    <p>Existen nodos de diferentes tipos, como los que hemos menciondo anteriormente como ejemplos, y que cuentan
+                        con diferentes características. Posición, transparencia, colores... que pueden ser modificables.
+                        Algunas de estas características o propiedades son relativas al nodo desde el cual cuelga el nodo
+                        en cuestión.</p>
+                </section>
+
+                <section>
+                    <p>Los nodos tienen nombre, tienen sus características, sirven para muchos propósitos</p>
+                    <p>A través de esta estructura de ramas (o raíces, ya que los nodos cuelgan hacia abajo desde el nodo principal
+                        o top).</p>
+                </section>
+
+            </section>
+
+            <section>
+                <h2>Scripting</h2>
+
+                <section>
+                    <img src="http://docs.godotengine.org/en/3.0/_images/brainslug.jpg" />
+                </section>
+
+                <section>
+
+                    <p>Variables</p>
+                    <p>Almacén de valores para referencias posteriores</p>
+                    <pre><code>var nombrePersonaje = "Nombre aleatorio"</code></pre>
+
+                </section>
+
+                <section>
+                    <p>Condicionales</p>
+                    <pre><code>
+                    if num < 2:
+                        print ("Es menor que dos")
+                    elif num > 2 and num < 5:
+                        print ("Número entre dos y cinco")
+                    else:
+                        print ("Número mayor que cinco")
+                </code></pre>
+                </section>
+                <section>
+                    <p>Bloque
+                        <i>switch</i> o
+                        <i>match</i>
+                    </p>
+                    <p>Evaluar una variable entre posibles valores concretos:</p>
+                    <pre><code>
+                    match direccion:
+                        1:
+                            print ("Número 1")
+                        2:
+                            print ("Número 2")
+                        3:
+                            print ("Número 3")
+                </code></pre>
+                </section>
+                <section>
+                    <p>Listas de datos,
+                        <i>arrays</i>
+                    </p>
+                    <pre><code>var listaDatos = ["Godot", 34, 13.4, true, "otro dato", 3]</code></pre>
+                    <p>Diccionarios,
+                        <i>hashes</i>
+                    </p>
+                    <pre><code>var datosPersonaje = { "nombre" : "Abraxas", "salud" : 20 }</code></pre>
+                </section>
+
+                <section>
+
+                    <p>Declarando nuestras propias funciones</p>
+                    <pre><code>
+                    func unaFuncion():
+                        return 0
+                    </code></pre>
+
+                </section>
+
+                <section>
+                    <p>Bucle WHILE</p>
+                    <pre><code>
+                        while (true):
+                            print("¡Bucle infinito!")
+                    </code></pre>
+                    <p>Bucle FOREACH</p>
+                    <pre><code>
+                        for item in listaDatos:
+                            print(item)                        
+                    </code></pre>
+                </section>
+
+                <section>
+                    <p>Bucle FOR</p>
+                    <pre><code>
+                        for i in range(1, 10):
+                            print i
+                        </code></pre>
+                    <p>Empezando en 4, hacia 20, con saltos de a dos</p>
+                    <pre><code>
+                            for i in range(4, 20, 2):
+                            print i
+                    </code></pre>
+
+                </section>
+
+            </section>
+
+            <section>
+                <h4> Búscame en la red </h4>
+                <table style="float:left;" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="https://pbs.twimg.com/profile_images/891591744512544769/BunMhyMb_400x400.jpg" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="float:right;" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="https://twitter.com/Beelzenef_" target="_blank">@Beelzenef_ en Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Beelzenef" target="_blank">Beelzenef en GitHub</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:elena.guzbla@gmail.com">elena.guzbla@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="../libs/reveal/lib/js/head.min.js"></script>
+    <script src="../libs/reveal/js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+
+</html>
