@@ -83,18 +83,24 @@
 
                 <h2> ¿Por qué Godot? </h2>
 
-                <ul>
-                    <li>
-                        <i>Open-source</i>
-                    </li>
-                    <li>Gratuita</li>
-                    <li>Multiplataforma</li>
-                    <li>Con motor 2D y 3D</li>
-                    <li>Una comunidad creciente</li>
-                    <li>Lenguaje propio basado en Python, GDscript</li>
-                    <li>Curva de aprendizaje adecuada</li>
-                    <li>Resultados en poco tiempo</li>
-                </ul>
+                <section>
+                    <img src="./engines.gif"/>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            <i>Open-source</i>
+                        </li>
+                        <li>Gratuita</li>
+                        <li>Multiplataforma</li>
+                        <li>Con motor 2D y 3D</li>
+                        <li>Una comunidad creciente</li>
+                        <li>Lenguaje propio basado en Python, GDscript</li>
+                        <li>Curva de aprendizaje adecuada</li>
+                        <li>Resultados en poco tiempo</li>
+                    </ul>
+                </section>
 
             </section>
 
@@ -106,6 +112,11 @@
                     <p>¿Qué es un nodo?</p>
                     <img src="./nodos.gif" />
                 </section>
+
+                <section>
+                    <img src="./ejemplonodos.gif" />
+                </section>
+
                 <section>
                     <p>Un nodo es la unidad básica con la que se opera en Godot. Una escena, un objeto con colisiones, el mundo
                         para los niveles de nuestro juego, un sprite...</p>
@@ -180,16 +191,6 @@
                 </section>
 
                 <section>
-
-                    <p>Declarando nuestras propias funciones</p>
-                    <pre><code>
-                    func unaFuncion():
-                        return 0
-                    </code></pre>
-
-                </section>
-
-                <section>
                     <p>Bucle WHILE</p>
                     <pre><code>
                         while (true):
@@ -213,7 +214,21 @@
                         for i in range(4, 20, 2):
                             print i
                     </code></pre>
+                </section>
 
+                <section>
+
+                    <p>Declarando nuestras propias funciones, con parámetros y devolviendo valor...</p>
+                    <pre><code>
+                    func sumando(num1, num2):
+                        return num1 + num2
+                    </code></pre>
+                    <p>... O no devuelven valores y no reciben parámetros:</p>
+                    <pre><code>
+                    func msgAConsola():
+                        print "Enviando mensaje..."
+                        pass    
+                    </code></pre>
                     
                 </section>
 
