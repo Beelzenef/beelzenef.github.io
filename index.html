@@ -1,93 +1,454 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<title>beelzenef.github.io</title>
-	<meta http-equiv="X-UA-Compatible\" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CSS de Bootstrap -->
-	<link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Elena G - Developer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
 </head>
 
 <body>
 
-	<script src=\ "http://code.jquery.com/jquery.js\"></script>
-	<script src=\ "../libs/bootstrap/js/bootstrap.min.js\"></script>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-		<p class="navbar-brand">beelzenef.github.io</p>
+      <nav id="nav-wrap">
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="https://github.com/Beelzenef" target="_blank">GitHub</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="https://twitter.com/Beelzenef_" target="_blank">Twitter</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="https://www.linkedin.com/in/elena-guzman-blanco/" target="_blank">Linkedin</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-	</br>
-	</br>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
 
-	<div class="container">
+      </nav> <!-- end #nav-wrap -->
 
-		<nav class="navbar navbar-expand-lg navbar">
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Elena Guzmán Blanco.</h1>
+            <h3>I'm software developer located in Málaga, Spain. Learning new technologies and making dreams come apps. 
+                Also writing and creating fictional worlds, dreaming new adventures in TTRPGames and videogames to imagine better worlds.
+            </h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://twitter.com/Beelzenef_"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/105745322088370594581"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/elena-guzman-blanco"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="dropdown-item" href="./apps.html">Proyectos</a> </li>
-					<li class="nav-item active">
-						<a class="dropdown-item" href="./diapos.html">Presentaciones</a>
-					</li>
-					<li class="nav-item active">
-						<a class="dropdown-item" href="./libros.html">Libros</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-		<br/>
+   </header> <!-- Header End -->
 
-		<a class="text-center" href="./destiny/destiny.html">
-			<p>Destiny Captor!</p>
-		</a>
-		<a class="text-center" href="./oopAsRPG/oopAsRPG.html">
-			<p>Aprende OOP como un RPG</p>
-		</a>
-		<a class="text-center" href="./refactorizaCodigo/refactorizaCodigo.html">
-			<p>Refactoriza tu vida, una historia de código limpio</p>
-		</a>
-		<a class="text-center" href="./introProgramacion/introProgramacion.html">
-			<p>Introducción a la programación</p>
-		</a>
-		<a class="text-center" href="./aprenderGodot/godot.html">
-			<p>GodotEngine, videojuegos en forma de nodos</p>
-		</a>
-		<a class="text-center" href="https://beelzenef.github.io/AndroidMe/">
-			<p>"Android me!", aprendiendo Android</p>
-		</a>
-		<a class="text-center" href="https://beelzenef.github.io/learnGodot/">
-			<p>"learnGodot", aprendiendo GodotEngine</p>
-		</a>
 
-		<footer class="page-footer blue center-on-small-only">
-			<br/><br/><br/><br/><br/><br/><br/>
-			<div class="footer-copyright">
-				<div class="container-fluid text-center">Coded with ☕ by
-					<a href="https://about.me/Beelzenef"> Elena Guzmán Blanco </a>
-				</div>
-			</div>
-		</footer>
-	</div>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>Fantasy and science fiction writer. Android and C# developer, coding apps and dreams.
+                We are here to create, to learn, to teach, to feel, to write... let's go for it.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Elena Guzmán Blanco</span><br>
+						   <span>Málaga, Spain
+                     </span><br>
+                     <span>elena.guzbla@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="inc/ElenaGuzmanBlancoCV.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Portada Alta</h3>
+                  <p class="info">Higher Education in Crossplatform Development <span>&bull;</span> <em class="date">2018 - 2018</em></p>
+
+                  <p>
+                    CSharp and Android applications development, markup languages, databases management, 
+                    web development, ERP, game development with Unity3D, multi-threaded programming,
+                     Object Oriented Programming
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>IES Jesús Marín</h3>
+                  <p class="info">Higher Education in Network Systems Management<span>&bull;</span> <em class="date">2014</em></p>
+
+                  <p>
+                    Operating system management (Windows Server + GNU/Linux), hardware maintenance.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Intendia SL</h3>
+                  <p class="info">Java programmer<span>&bull;</span> <em class="date">2018 - Present</em></p>
+
+                  <p>
+                    Web development with JEE and Google Web Tookit (GWT)
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Robonautas</h3>
+                  <p class="info">Robotics instructor <span>&bull;</span> <em class="date">2017</em></p>
+
+                  <p>
+                    Teaching robotics, game development and programming to students
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>CSharp, WPF, mySQL, SQLite, HTML5, CSS3, Javascript, Python,
+                    Java, Android, Blender3D, PHP, Laravel, Unity3D, Wordpress,
+                    GNU/Linux, XML, XQuery, Git, mongoDB, GodotEngine
+            </p>
+
+            <div class="columns contact-details">
+
+				   <p> Want to know more? Visit my <a href="https://github.com/Beelzenef">GitHub profile!</a>
+                   </p>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check out some of my content</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Android_Logo.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Android me!</h5>
+                              <p>Learning and teaching Android</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Game development</h5>
+                              <p>Check out my games!</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="https://www.sarahseleckywritingschool.com/wp-content/uploads/2012/08/PenandPaper-300x300.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Geekstorming!</h5>
+                              <p>Blogging about tech</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="http://broquere.brice.free.fr/godot_icon.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>learnGodot</h5>
+                              <p>Learning gamedev</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="http://www.frikipandi.com/wp-content/uploads/2017/09/que-es-android-smartphone-logo.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Android</h4>
+			      <p>There's no secrets in Android</p>
+               <span class="categories"><i class="fa fa-tag"></i>Android, Development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://beelzenef.github.io/AndroidMe/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Game development</h4>
+			      <p>Developing games in Unity3D and Godot Engine</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://beelzenef.itch.io/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://geekstorming.files.wordpress.com/2015/05/creando.png?w=600" alt="" />
+
+		      <div class="description-box">
+			      <h4>Geekstorming!</h4>
+			      <p>Writing about tech and make some code loving!</p>
+               <span class="categories"><i class="fa fa-tag"></i>Blogging</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://geekstorming.wordpress.com">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Godot_logo.svg/1200px-Godot_logo.svg.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>learn Godot</h4>
+			      <p>Creating and writing about games in Godot</p>
+               <span class="categories"><i class="fa fa-tag"></i>Videogames</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://beelzenef.github.io/learnGodot/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://twitter.com/Beelzenef_"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/105745322088370594581"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/elena-guzman-blanco/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
 
